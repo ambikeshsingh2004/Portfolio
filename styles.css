@@ -425,6 +425,27 @@ h1 {
     background: rgba(255, 212, 59, 0.25);
 }
 
+.bubble.go {
+    background: rgba(0, 173, 216, 0.15);
+    color: #00add8;
+    border-color: rgba(0, 173, 216, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.go-logo {
+    width: 24px;
+    height: 14px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.bubble.go:hover {
+    box-shadow: 0 0 30px rgba(0, 173, 216, 0.5);
+    background: rgba(0, 173, 216, 0.25);
+}
+
 .bubble.mongo {
     background: rgba(77, 179, 61, 0.15);
     color: #4db33d;
@@ -906,7 +927,7 @@ h3 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -989,6 +1010,15 @@ h3 {
 
 .project-card:nth-child(3) .project-image-placeholder::after {
     content: none;
+}
+
+/* Arkitect Project */
+.project-card:nth-child(4) .project-image-placeholder {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.project-card:nth-child(4) .project-image-placeholder::after {
+    content: '🏗️';
 }
 
 .project-icon {
