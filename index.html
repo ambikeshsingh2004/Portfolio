@@ -43,6 +43,10 @@
 </head>
 
 <body>
+    <!-- Premium Background Orbs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
     <!-- Cursor Glow Effect -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -170,96 +174,148 @@
         <section id="projects" class="projects-section container">
             <h3>Featured Projects</h3>
             <div class="projects-grid">
-                <!-- Project 1: NutriGenius -->
-                <article class="project-card">
-                    <div class="project-image-placeholder"></div>
-                    <div class="project-content">
-                        <h4>🥗 NutriGenius - Your AI Diet Buddy</h4>
-                        <p>A smart meal planner powered by Gemini AI, featuring real-time ingredient analysis and
-                            personalized diet plans that adapt to your lifestyle.</p>
-                        <div class="tech-stack">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Supabase</span>
-                            <span>Gemini AI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://eatly-frontend-three.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                class="link-text">Live Demo →</a>
-                            <a href="https://github.com/ambikeshsingh2004/Eatly" target="_blank"
-                                rel="noopener noreferrer" class="link-text">GitHub →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2: BeatForge -->
-                <article class="project-card">
-                    <div class="project-image-placeholder"></div>
-                    <div class="project-content">
-                        <h4>🎵 BeatForge - Live Music Composer</h4>
-                        <p>An interactive web-based music composition tool that lets you create, edit, and play beats in
-                            real-time with an intuitive visual timeline.</p>
-                        <div class="tech-stack">
-                            <span>Next.js</span>
-                            <span>Socket.io</span>
-                            <span>Web Audio API</span>
-                            <span>Real-time</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://musically-web-nxbj.onrender.com/" target="_blank" rel="noopener noreferrer"
-                                class="link-text">Live Demo →</a>
-                            <a href="https://github.com/ambikeshsingh2004/Music" target="_blank"
-                                rel="noopener noreferrer" class="link-text">GitHub →</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- Project 3: QueryLab -->
-                <article class="project-card">
+                <!-- Project 1: Arkitect -->
+                <article class="project-card project-arkitect">
                     <div class="project-image-placeholder">
-                        <svg class="project-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 3C7.58 3 4 4.34 4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6c0-1.66-3.58-3-8-3zm0 2c3.53 0 6 1 6 1s-2.47 1-6 1-6-1-6-1 2.47-1 6-1zm-6 3.09c1.33.88 3.54 1.41 6 1.41s4.67-.53 6-1.41V8.5c0 1.66-3.58 3-8 3s-8-1.34-8-3V8.09zm0 4c1.33.88 3.54 1.41 6 1.41s4.67-.53 6-1.41v.5c0 1.66-3.58 3-8 3s-8-1.34-8-3v-.5zm0 4c1.33.88 3.54 1.41 6 1.41s4.67-.53 6-1.41V18c0 1.66-3.58 3-8 3s-8-1.34-8-3v-.91z" />
+                        <svg class="project-svg" viewBox="0 0 100 100">
+                            <g class="svg-line">
+                                <path d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" />
+                                <path d="M50 10 L50 90 M10 50 L90 50" stroke-dasharray="2 2" />
+                            </g>
+                            <circle class="svg-accent svg-pulse" cx="50" cy="50" r="10" />
+                            <circle class="svg-secondary" cx="20" cy="20" r="4" />
+                            <circle class="svg-secondary" cx="80" cy="20" r="4" />
+                            <circle class="svg-secondary" cx="20" cy="80" r="4" />
+                            <circle class="svg-secondary" cx="80" cy="80" r="4" />
+                            <path class="svg-line" d="M20 20 L50 50 L80 20 M20 80 L50 50 L80 80" />
                         </svg>
                     </div>
                     <div class="project-content">
-                        <h4>🔍 QueryLab - Database Index Visualizer</h4>
-                        <p>A visualizer tool to understand how database indexing works and analyze the performance
-                            impact of different index types.</p>
+                        <h4>🏗️ Arkitect</h4>
+                        <p>High-performance system design visualization tool with real-time node scaling.</p>
                         <div class="tech-stack">
+                            <span>Go</span>
                             <span>React</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                            <span>Explain Analyze</span>
+                            <span>gRPC</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://querylab-quq7.onrender.com" target="_blank" rel="noopener noreferrer"
-                                class="link-text">Live Demo →</a>
-                            <a href="https://github.com/ambikeshsingh2004/Observer" target="_blank"
-                                rel="noopener noreferrer" class="link-text">GitHub →</a>
+                            <a href="https://arkitect.onrender.com" target="_blank" rel="noopener noreferrer"
+                                class="link-text">Live Demo</a>
+                            <a href="https://github.com/ambikeshsingh2004/Arkitect" target="_blank"
+                                rel="noopener noreferrer" class="link-text">GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 4: Arkitect -->
-                <article class="project-card">
+                <!-- Project 2: Voice Cursor -->
+                <article class="project-card project-voicecursor">
                     <div class="project-image-placeholder">
-                        <!-- Preview image will be handled via CSS or added here if preferred -->
+                        <svg class="project-svg" viewBox="0 0 100 100">
+                            <rect class="svg-accent svg-pulse" x="45" y="25" width="10" height="40" rx="5" />
+                            <path class="svg-line" d="M30 45 Q 50 15 70 45" fill="none" />
+                            <path class="svg-line" d="M20 50 Q 50 5 80 50" fill="none" />
+                            <path class="svg-secondary" d="M35 65 A 15 15 0 0 0 65 65" fill="none" stroke-width="2" />
+                            <rect class="svg-secondary" x="48" y="70" width="4" height="15" />
+                        </svg>
                     </div>
                     <div class="project-content">
-                        <h4>🏗️ Arkitect - System Design Simulator</h4>
-                        <p>A real-time simulator to visually construct and analyze distributed systems. Drag-and-drop
-                            components, simulate traffic flow, and receive AI-driven bottleneck analysis.</p>
+                        <h4>🏗️ Voice Cursor</h4>
+                        <p>Next-gen AI assistant that allows natural language control over your browser environment.</p>
                         <div class="tech-stack">
-                            <span>Go</span>
-                            <span>React Flow</span>
-                            <span>Tailwind CSS</span>
-                            <span>Docker</span>
+                            <span>Electron</span>
+                            <span>Sarvam AI</span>
+                            <span>RobotJS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://arkitect.onrender.com" target="_blank" rel="noopener noreferrer"
-                                class="link-text">Live Demo →</a>
-                            <a href="https://github.com/ambikeshsingh2004/Arkitect" target="_blank"
-                                rel="noopener noreferrer" class="link-text">GitHub →</a>
+                            <a href="https://github.com/ambikeshsingh2004/Bulbul" target="_blank"
+                                rel="noopener noreferrer" class="link-text">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Musically -->
+                <article class="project-card project-musically">
+                    <div class="project-image-placeholder">
+                        <svg class="project-svg" viewBox="0 0 100 100">
+                            <circle class="svg-accent svg-pulse" cx="50" cy="50" r="15" fill="none" stroke-width="3" />
+                            <circle class="svg-secondary" cx="50" cy="50" r="25" fill="none" stroke-width="1.5"
+                                stroke-dasharray="4 4" />
+                            <rect class="svg-accent" x="48" y="30" width="4" height="25" rx="2" />
+                            <circle class="svg-accent" cx="42" cy="55" r="8" />
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h4>🏗️ Musically</h4>
+                        <p>A collaborative music composer platform for high-quality audio distribution.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>Socket.io</span>
+                            <span>Web Audio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://musically-web-nxbj.onrender.com/" target="_blank" rel="noopener noreferrer"
+                                class="link-text">Live Demo</a>
+                            <a href="https://github.com/ambikeshsingh2004/Music" target="_blank"
+                                rel="noopener noreferrer" class="link-text">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: QueryLab -->
+                <article class="project-card project-querylab">
+                    <div class="project-image-placeholder">
+                        <svg class="project-svg" viewBox="0 0 100 100">
+                            <rect class="svg-accent" x="25" y="25" width="50" height="10" rx="2" />
+                            <rect class="svg-secondary" x="25" y="40" width="50" height="10" rx="2" />
+                            <rect class="svg-secondary" x="25" y="55" width="50" height="10" rx="2" />
+                            <g class="svg-accent svg-pulse">
+                                <circle cx="70" cy="70" r="12" fill="none" stroke-width="3" />
+                                <line x1="78" y1="78" x2="90" y2="90" stroke-width="4" stroke="currentColor" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h4>🏗️ QueryLab</h4>
+                        <p>Advanced indexing engine for large-scale databases with real-time experiment tracking.</p>
+                        <div class="tech-stack">
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://querylab-quq7.onrender.com" target="_blank" rel="noopener noreferrer"
+                                class="link-text">Live Demo</a>
+                            <a href="https://github.com/ambikeshsingh2004/Observer" target="_blank"
+                                rel="noopener noreferrer" class="link-text">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Eatly -->
+                <article class="project-card project-eatly">
+                    <div class="project-image-placeholder">
+                        <svg class="project-svg" viewBox="0 0 100 100">
+                            <path class="svg-accent svg-pulse"
+                                d="M50 20 C 30 20, 20 40, 20 60 C 20 80, 40 90, 50 90 C 60 90, 80 80, 80 60 C 80 40, 70 20, 50 20" />
+                            <path class="svg-secondary" d="M50 20 L50 10 M50 20 L65 5" stroke-width="3"
+                                stroke-linecap="round" />
+                            <circle class="svg-secondary" cx="35" cy="50" r="3" />
+                            <circle class="svg-secondary" cx="65" cy="50" r="3" />
+                            <path class="svg-line" d="M40 70 Q 50 80 60 70" fill="none" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h4>🏗️ Eatly</h4>
+                        <p>Smart diet planner providing personalized recommendations based on fitness goals and health
+                            data.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>NutriAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ambikeshsingh2004/Eatly" target="_blank"
+                                rel="noopener noreferrer" class="link-text">GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -275,7 +331,8 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2022 - 2026</div>
                         <h4>B.Tech in Computer Science & Engineering</h4>
-                        <p class="timeline-institution">🏛️ Indian Institute of Information Technology, Kalyani</p>
+                        <p class="timeline-institution">🏛️ Indian Institute of Information Information Technology,
+                            Kalyani</p>
                         <p class="timeline-details">CGPA: <strong>8.06</strong> | West Bengal, India</p>
                         <div class="timeline-tags">
                             <span>Data Structures</span>
@@ -313,6 +370,8 @@
     <footer class="footer">
         <div class="container footer-content">
             <p>© 2024 Built with Semantic HTML & Vanilla CSS for 100% Performance.</p>
+            <p class="footer-email">Contact: <a href="mailto:ambikeshsingh367@gmail.com">ambikeshsingh367@gmail.com</a>
+            </p>
         </div>
     </footer>
 
