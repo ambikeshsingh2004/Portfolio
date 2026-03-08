@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatly Case Study | Ambikesh Singh</title>
+    <meta name="description" content="Technical case study of Eatly: An AI-powered smart diet planner.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .case-study-hero { padding-top: 10rem; padding-bottom: 5rem; text-align: center; }
+        .case-study-content { max-width: 800px; margin: 0 auto; padding-bottom: 10rem; }
+        .cs-section { margin-bottom: 5rem; background: var(--bg-surface); border: 1px solid var(--glass-border); border-radius: 32px; padding: 3.5rem; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .cs-section h2 { font-size: 2.25rem; margin-bottom: 2rem; background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.6) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .cs-section p { font-size: 1.15rem; color: var(--text-relaxed); line-height: 1.9; margin-bottom: 1.5rem; }
+        .cs-list { list-style: none; margin-top: 2rem; }
+        .cs-list li { position: relative; padding-left: 2rem; margin-bottom: 1.5rem; color: var(--text-relaxed); font-size: 1.1rem; }
+        .cs-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent-primary); font-weight: bold; }
+        .back-btn { position: fixed; top: 2rem; left: 2rem; z-index: 1001; padding: 0.75rem 1.5rem; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 12px; color: var(--text-vibrant); text-decoration: none; font-weight: 600; transition: all 0.3s var(--transition-spring); display: flex; align-items: center; gap: 0.5rem; }
+        .back-btn:hover { transform: translateX(-5px); border-color: var(--accent-primary); background: rgba(99, 102, 241, 0.1); }
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .tech-item { padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border); border-radius: 20px; text-align: center; }
+        .tech-item h5 { color: var(--text-vibrant); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .tech-item p { font-size: 0.95rem !important; margin-bottom: 0 !important; }
+        @media (max-width: 768px) { .cs-section { padding: 2rem; } .case-study-hero h1 { font-size: 3rem; } }
+    </style>
+</head>
+
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <main class="container">
+        <header class="case-study-hero">
+            <h1 class="highlight" style="font-size: 4.5rem; margin-bottom: 1rem;">Eatly</h1>
+            <p class="subtitle">AI-Powered Smart Diet Planner</p>
+        </header>
+
+        <div class="case-study-content">
+            <section class="cs-section">
+                <h2>❓ The Problem: Fragmented Dieting</h2>
+                <p>Most health enthusiasts face three main barriers when trying to maintain a healthy lifestyle:</p>
+                <ul class="cs-list">
+                    <li><strong>Generic Advice</strong>: Standard calorie targets that don't account for individual body composition or activity levels.</li>
+                    <li><strong>Manual Tracking</strong>: The tedious task of logging every ingredient and calculating macros manually.</li>
+                    <li><strong>Food Waste</strong>: Difficulty in finding recipes that use the ingredients already in the fridge.</li>
+                </ul>
+            </section>
+
+            <section class="cs-section">
+                <h2>🛠️ The Build: Intelligent Nutrition</h2>
+                <div class="tech-grid">
+                    <div class="tech-item"><h5>AI Vision</h5><p>Gemini Pro Vision for instant ingredient recognition from photos.</p></div>
+                    <div class="tech-item"><h5>Real-Time Data</h5><p>Supabase for secure authentication and instant data synchronization.</p></div>
+                    <div class="tech-item"><h5>Dynamic UI</h5><p>Vite + React for a lightning-fast, responsive user experience.</p></div>
+                </div>
+                <p style="margin-top: 2.5rem;">Eatly is a full-stack health platform that leverages Google's Gemini AI to bridge the gap between "having ingredients" and "having a plan." By combining real-time database tech with advanced LLMs, it automates the most painful parts of dieting.</p>
+            </section>
+
+            <section class="cs-section">
+                <h2>🧠 Technical Deep Dive: Vision to Meal-Plan</h2>
+                <p>The core of Eatly is its dual AI integration. First, a **Vision Pipeline** identifies food items from user images with 90%+ accuracy. Second, a **Personalized Recommendation Engine** maps these ingredients against user biometrics.</p>
+                <p>The system calculates precise daily targets (Calories, Protein, Carbs, Fats) based on weight, height, and goal, then prompts Gemini to generate a complete 3-day meal plan and a consolidated grocery list, formatted as structured JSON for immediate UI rendering.</p>
+            </section>
+
+            <section class="cs-section">
+                <h2>✨ The Results</h2>
+                <ul class="cs-list">
+                    <li><strong>Zero-Effort Planning</strong>: AI-generated meal plans tailored to individual health goals.</li>
+                    <li><strong>Smart Groceries</strong>: Automated, consolidated shopping lists that minimize waste and cost.</li>
+                    <li><strong>Engagement</strong>: Built-in streak tracking to keep users motivated on their fitness journey.</li>
+                </ul>
+            </section>
+
+            <section style="text-align: center; margin-top: 5rem;">
+                <a href="https://github.com/ambikeshsingh2004/Eatly" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content"><p>© 2024 Ambikesh Singh. Bridging tech and health.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
